@@ -1,0 +1,40 @@
+print("enter 'add' to add two numbers")
+print("enter 'subtract' to subtract two numbers")
+print("enter 'multiply' to multiply two numbers")
+print("enter 'divide' to divide two numbers")
+print("enter 'root' to get the root out of the number")
+print("enter 'square' to get the square of the number")
+print("enter 'quit' to close out of the program")
+user_input = input(": ")
+if user_input == "quit":
+    sys.exit()
+elif user_input == "add":
+    add_0 = int(input("enter the first number: "))
+    add_1 = int(input("enter the second number: "))
+    add_answer = add_0 + add_1
+    print(add_answer)
+elif user_input == "subtract":
+    sub_0 = int(input("enter the first number: "))
+    sub_1 = int(input("enter the second number: "))
+    sub_answer = sub_0 - sub_1
+    print(sub_answer)
+elif user_input == "multiply":
+    mul_0 = int(input("enter the first number: "))
+    mul_1 = int(input("enter the second number: "))
+    mul_answer = mul_0 * mul_1
+    print(mul_answer)
+elif user_input == "divide":
+    div_0 = int(input("enter the first number: "))
+    div_1 = int(input("enter the second number: "))
+    div_answer = div_0 / div_1
+    print(div_answer)
+elif user_input == "square":
+    sqr_0 = int(input("enter the number: "))
+    sqr_answer = sqr_0 * sqr_0
+    print("answer is: " + str(sqr_answer))
+elif user_input == "root":
+    rt_0 = int(input("enter the number: "))
+    rt_answer = rt_0 ** 0.5
+    print("answer is: " + str(rt_answer))
+else:
+    print("unknown input!")
